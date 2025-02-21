@@ -35,7 +35,7 @@ class GameViewController: UIViewController {
 //        AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
         self.view.backgroundColor = .black
         let screenWidth = UIScreen.main.bounds.width
-        score.frame = CGRect(x: (screenWidth - score.frame.width)/2, y: 20, width: 200, height: 20)
+        score.frame = CGRect(x: (screenWidth - score.frame.width)/2, y: 50, width: 200, height: 20)
         score.textColor = .white
         let n=Int(UIScreen.main.bounds.width/10)
         let offset = 50

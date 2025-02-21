@@ -66,7 +66,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
         allScales = [
             "C": [cKey, dKey, eKey, fKey, gKey, aKey, bKey, c4Key],
-            "C#": [csKey, dsKey, fKey, fsKey, gsKey, asKey, cKey, c4Key],
+            "C#": [csKey, dsKey, fKey, fsKey, gsKey, asKey, cKey, csKey],
             "D": [dKey, eKey, fsKey, gKey, aKey, bKey, csKey, dKey],
             "D#": [dsKey, fKey, gKey, gsKey, asKey, cKey, dKey, dsKey],
             "E": [eKey, fsKey, gsKey, aKey, bKey, csKey, dsKey, eKey],
@@ -95,7 +95,6 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        AppUtility.lockOrientation(.portrait)
     }
     
     @IBAction func keyPressed(_ sender: UIButton) {
@@ -188,3 +187,4 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
 }
+ 

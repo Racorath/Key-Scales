@@ -22,9 +22,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         emailTextfield.delegate = self
         passwordTextfield.delegate = self
-        // Do any additional setup after loading the view.
     }
-    
     
     @IBAction func registerPressed(_ sender: UIButton) {
         
